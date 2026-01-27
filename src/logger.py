@@ -14,3 +14,10 @@ logging.basicConfig(
     level=logging.INFO
 )
 
+
+
+try:
+    1/10
+except Exception as e:
+    logging.info('Divided by Zero')
+    raise ConnectionRefusedError(e,sys)
